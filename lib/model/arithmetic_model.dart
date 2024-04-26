@@ -11,4 +11,20 @@ class ArithmeticModel {
   int sub() {
     return first - second;
   }
+
+  //add
+  int add() {
+    return first + second;
+  }
+
+  //multiply
+  int multipy() {
+    return first * second;
+  }
+
+  //divide
+  double divide() {
+    return first / second;
+  }
+
 }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:second_app/model/arithmetic_model.dart';
 
@@ -66,7 +65,9 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
                   labelText: 'Enter Second No',
                 ),
               ),
+              
               const SizedBox(height: 8),
+              
               // Button
               SizedBox(
                 width: double.infinity,
@@ -81,7 +82,7 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
                     });
                   },
                   child: const Text(
-                    'subtract',
+                    'Calculate',
                     style: TextStyle(
                       fontSize: 25,
                     ),

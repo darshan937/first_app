@@ -1,8 +1,8 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:second_app/screen/area_of_circle_screen.dart';
 import 'package:second_app/screen/arithmetic_screen.dart';
+import 'package:second_app/screen/column_screen.dart';
+import 'package:second_app/screen/layout_screen.dart';
 import 'package:second_app/screen/simple_interest.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -74,6 +74,42 @@ class DashboardScreen extends StatelessWidget {
                 },
                 child: const Text(
                   'Area of a Circle.',
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
+              ),
+            ),
+            // Button 4
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ColumnScreen()));
+                },
+                child: const Text(
+                  'Column',
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
+                ),
+              ),
+            ),
+            // Button 5
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LayoutScreen()));
+                },
+                child: const Text(
+                  'Layout',
                   style: TextStyle(
                     fontSize: 25,
                   ),
